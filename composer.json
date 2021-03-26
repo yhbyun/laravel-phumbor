@@ -23,5 +23,15 @@
             "Ceejayoz\\LaravelPhumbor": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ceejayoz\\LaravelPhumbor\\LaravelPhumborServiceProvider"
+            ],
+            "aliases": {
+                "Phumbor": "Ceejayoz\\LaravelPhumbor\\Facades\\Phumbor"
+            }
+        }
+    },
     "minimum-stability": "stable"
 }
