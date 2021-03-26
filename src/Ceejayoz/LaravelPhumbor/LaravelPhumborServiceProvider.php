@@ -36,7 +36,7 @@ class LaravelPhumborServiceProvider extends ServiceProvider
             $this->app->configure('laravel-phumbor');
         }
 
-        $this->app['phumbor'] = $this->app->share(function ($app) {
+        $this->app->singleton('phumbor', function ($app) {
             $configPath = __DIR__ . '/../../config/config.php';
             $this->mergeConfigFrom($configPath, 'laravel-phumbor');
 
